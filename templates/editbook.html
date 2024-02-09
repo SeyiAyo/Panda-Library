@@ -32,6 +32,7 @@
       
       <form class = "mt-4" action="/edit-book/edit/" method="post">
         {% csrf_token %}
+        <input type="hidden" name="bookid" id="" value="{{book.id}}">
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title" name="title" value="{{book.title}}" required>

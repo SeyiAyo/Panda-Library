@@ -42,7 +42,7 @@
       <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">index</th>
+      <th scope="col">id</th>
       <th scope="col">Title</th>
       <th scope="col">Author</th>
       <th scope="col">Action</th>
@@ -51,12 +51,12 @@
   <tbody>
     {% for book in books %}
     <tr>
-      <th scope="row">{{forloop.counter}}</th>
+      <th scope="row">1</th>
       <td>{{book.title}}</td>
       <td>{{book.author}}</td>
       <td>
         <a href="/edit-book/?bookid={{book.id}}"><button type="button" class="btn btn-primary">Edit</button></a>
-        <a href="/delete-book/?bookid={{book.id}}"><button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-danger">Delete</button>
       </td>
     </tr>
     {% endfor %}
